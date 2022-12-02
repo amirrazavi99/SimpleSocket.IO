@@ -1,15 +1,15 @@
 
 $(function(){
     //make connection
- const socket = io.connect('http://localhost:3000')
+ var socket = io.connect('http://localhost:3000')
 
  //buttons and inputs
- const message = $("#message")
- const username = $("#username")
- const send_message = $("#send_message")
- const send_username = $("#send_username")
- const chatroom = $("#chatroom")
- const feedback = $("#feedback")
+ var message = $("#message")
+ var username = $("#username")
+ var send_message = $("#send_message")
+ var send_username = $("#send_username")
+ var chatroom = $("#chatroom")
+ var feedback = $("#feedback")
 
  //Emit message
  send_message.click(function(){
